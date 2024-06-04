@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  
+    <title>Computer</title>
+    <link rel="stylesheet" href="styl1.css">
+</head>
+<body>
+    <h1>Lista Computer</h1>
+    
+    
+    <p th:text = "'Il seguente computer è stato inizializzato corretamente: '"></p>
+	  <h3>Marca: <span th:text = "${magazzino.marca}"></span></h3>
+	    <h3>Tipologia: <span th:text = "${magazzino.tipologia}"></span></h3>
+	    <h3>Modello: <span th:text = "${magazzino.modello}"></span></h3>
+	    <h3>Descrizion: <span th:text = "${magazzino.descrizione}"></span></h3>
+	    <h3>Quantità: <span th:text = "${magazzino.qnt}"></span></h3>
+	    <h3>Imagine: <img th:src = "${magazzino.url}"> </img></h3>
+	    <h3>Prezzo: <span th:text = "${magazzino.prezzo}"></span></h3>
+	    
+   
+    
+    <button onclick = "location.href='/'"> Go to home page</button>
+    
+   
+   
+</body>
+</html>
